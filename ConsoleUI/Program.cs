@@ -33,18 +33,64 @@ namespace ConsoleUI
 
             // Create a list of Vehicle called vehicles
 
+            List<Vehicle> vehicles = new List<Vehicle>();
+
             /*
-             * Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle (use explicit typing) but use constuctors from derived classes
+             * Create 4 instances: 1 Car, 1 Motorcycle, and then 2 instances of type Vehicle 
+             *                  (use explicit typing) but use constuctors from derived classes
              * - new it up as one of each derived class
              * Set the properties with object initializer syntax
              */
 
+            Car toyota = new Car()
+            {
+                Year = "2000",
+                Make = "toyota",
+                Model = "Camry"
+            };
+
+            Motorcycle Suzuki = new Motorcycle()
+            {
+                Year = "2017",
+                Make = "Suzuki",
+                Model = "GSXR 600"
+            };
+            Vehicle subaru = new Car()
+            {
+                Year = "2020",
+                Make = "Subaru",
+                Model = "Legacy"
+            };
+            Vehicle hondaGrom = new Motorcycle()
+            {
+                Year = "2019",
+                Make = "Honda",
+                Model = "Grom",
+                
+            };
+
+            vehicles.Add(toyota);
+            vehicles.Add(Suzuki);
+            vehicles.Add(subaru);
+            vehicles.Add(hondaGrom);
+
+            foreach (Vehicle vehicle in vehicles)
+            {
+                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+            }
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate over each of the properties
              */
 
+
             // Call each of the drive methods for one car and one motorcycle
+
+            toyota.DriveAbstract();
+            toyota.DriveVirtual();
+            toyota.HasTrunk();
+            Suzuki.DriveAbstract();
+            Suzuki.DriveVirtual();
 
             #endregion            
             Console.ReadLine();

@@ -45,13 +45,13 @@ namespace ConsoleUI
             Car toyota = new Car()
             {
                 Year = "2000",
-                Make = "toyota",
-                Model = "Camry"
+                Make = "Toyota",
+                Model = "Corolla"
             };
 
             Motorcycle Suzuki = new Motorcycle()
             {
-                Year = "2017",
+                Year = "1998",
                 Make = "Suzuki",
                 Model = "GSXR 600"
             };
@@ -65,7 +65,7 @@ namespace ConsoleUI
             {
                 Year = "2019",
                 Make = "Honda",
-                Model = "Grom",
+                Model = "CBR 250",
                 
             };
 
@@ -77,6 +77,8 @@ namespace ConsoleUI
             foreach (Vehicle vehicle in vehicles)
             {
                 Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+                vehicle.DriveVirtual();
+                Console.WriteLine("------------------------------");
             }
             /*
              * Add the 4 vehicles to the list

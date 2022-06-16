@@ -22,7 +22,7 @@ namespace ConsoleUI
         public abstract void DriveAbstract();
         public virtual void DriveVirtual()
         {
-            Console.WriteLine("Vrooom!!");
+            Console.WriteLine("This Vehicle goes Vrooom!!");
         }
     }
 }

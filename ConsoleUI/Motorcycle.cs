@@ -12,12 +12,12 @@ namespace ConsoleUI
 
         public override void DriveAbstract()
         {
-            Console.WriteLine("VREEEEEEM!!");
+            Console.WriteLine("This vehicle goes VREEEEEEM!!");
         }
 
         public override void DriveVirtual()
         {
-            Console.WriteLine("GraaGraaGraa!!");
+            Console.WriteLine("This vehicle goes GraaGraaGraa!!");
         }
 
         public bool HasSideCart { get; set; }

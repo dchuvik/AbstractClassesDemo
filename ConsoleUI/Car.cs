@@ -12,7 +12,7 @@ namespace ConsoleUI
 
         public override void DriveAbstract()
         {
-            Console.WriteLine("NREEEE!!");
+            Console.WriteLine("This vehicle goes NREEEE!!");
         }
 
         public virtual bool HasTrunk()
